@@ -1,3 +1,7 @@
-variable "subscription_id" {
+variable "rg-name" {
+  type = string
+}
+
+variable "location" {
   type = string
 }

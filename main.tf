@@ -9,13 +9,10 @@ terraform {
 
 provider "azurerm" {
   # Configuration options
-  features {
-
-  }
-  subscription_id = var.subscription_id
+  features {}
 }
 
 resource "azurerm_resource_group" "this" {
-  name     = "rg-ms-week39-test"
-  location = "norwayeast"
+  name     = var.rg-name
+  location = var.location
 }
